@@ -3,7 +3,7 @@ name: "Testing and Building Docker Image"
 on:
   push:
     branches:
-      - "main"
+      - "master"
 
 jobs:
   Prettier:
