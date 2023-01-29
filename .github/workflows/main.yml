@@ -41,4 +41,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bozynski_alina_final_site:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bozynski_alina_portfolio:latest

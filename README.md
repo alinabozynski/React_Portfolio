@@ -20,11 +20,11 @@ Then, to run the image as a container:
 
 Now open localhost:5575 in a browser!
 
-## Pushing to this repo automatically creates an image. Pull and run the application image from my Hub
+## Pushing to this repo automatically creates an image. Pull and run the application image from my Hub.
 
-### `docker pull abozynski/bozynski_alina_final_site`
+### `docker pull abozynski/bozynski_alina_portfolio`
 
-### `docker run --name <desired_container_name> -it -p 5575:80 --rm abozynski/bozynski_alina_final_site`
+### `docker run --name <desired_container_name> -it -p 5575:80 --rm abozynski/bozynski_alina_portfolio`
 
 # Getting Started with Create React App
 
