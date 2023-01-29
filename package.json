@@ -4,7 +4,7 @@
   "description": "Portfolio",
   "scripts": {
     "start": "PORT=5575 craco start",
-    "build": "craco build",
+    "builder": "craco build",
     "test": "prettier --check . && eslint ./",
     "prettier": "prettier --check .",
     "lint": "eslint ./",

@@ -6,7 +6,7 @@ COPY package.json /bozynski_alina_final_site/
 COPY package-lock.json /bozynski_alina_final_site/
 RUN npm i --silent
 COPY . /bozynski_alina_final_site/
-CMD ["npm", "run", "build"]
+CMD ["npm", "run", "builder"]
 
 # production environment
 FROM nginx:stable

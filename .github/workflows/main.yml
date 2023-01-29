@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install
           npm run lint
-  build:
+  builder:
     needs: [Prettier, Lint]
     runs-on: ubuntu-latest
     steps:
