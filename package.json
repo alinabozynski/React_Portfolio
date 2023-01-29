@@ -6,6 +6,8 @@
     "start": "PORT=5575 craco start",
     "build": "craco build",
     "test": "prettier --check . && eslint ./",
+    "prettier": "prettier --check .",
+    "lint": "eslint ./",
     "eject": "react-scripts eject"
   },
   "husky": {
