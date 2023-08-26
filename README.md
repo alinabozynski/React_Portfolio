@@ -1,34 +1,48 @@
 # Coding Assignment 14
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Requirements
+* Node.js
+* npm
 
 ## Run this application on localhost:5575
+### Run with npm
+Clone this repository and change into it's root directory.\
+If not all files cloned, execute the following:
+1. Set git flag with `git config core.protectNTFS false`.
+Git is susceptible to NTFS-related attacks when:
+* Running Git in the WSL
+* Working directly on Windows drives
+* Running Git on macOS and working on smb://-mounted network shares
+3. Run `git reset`
+4. Run `git checkout`
+5. Run `git restore ./`
 
-Fork the [GitHub repository](https://github.com/bozzywozzy/coding_assignment13) of this application.\
-Ensure all project dependencies are installed.\
-To run the app on Localhost:
+Ensure all project dependencies are installed with `npm install`.\
 
-### `npm start`
+Run the app on Localhost with: `npm run start`.\
+If you receive the error, 'Error: error:0308010C:digital envelope routines::unsupported' after the above command:
+* Unix: run `export NODE_OPTIONS=--openssl-legacy-provider`
+* Windows command prompt: `set NODE_OPTIONS=--openssl-legacy-provider`
+* Powershell: `$env:NODE_OPTIONS = "--openssl-legacy-provider"`
+If the above doesn't work, try to use the current LTS version from [Node.js](https://nodejs.org/en/download/releases).
 
-Or:\
-To run from a Docker container, navigate to the root directory of this project in a terminal.\
-To create a Docker image, run:
-
-### `docker build -t <desired_image_name> .`
-
-Then, to run the image as a container:
-
-### `docker run --name <desired_container_name> -it -p 5575:80 --rm <image_name>`
-
+### Run from Docker container 
+Clone repository with directions above and navigate to the root directory.\
+Download Docker [here](https://www.docker.com/) and start it up to ensure the Docker daemon is running.\
+To create a Docker image, run: `docker build -t <desired_image_name> .`\
+Then run the image as a container: `docker run --name <desired_container_name> -it -p 5575:80 --rm <image_name>`\
 Now open localhost:5575 in a browser!
 
 ## Pushing to this repo automatically creates an image. Pull and run the application image from my Hub.
-
-### `docker pull abozynski/bozynski_alina_portfolio`
-
-### `docker run --name <desired_container_name> -it -p 5575:80 --rm abozynski/bozynski_alina_portfolio`
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Download Docker [here](https://www.docker.com/) and start it up to ensure the Docker daemon is running.\
+```
+docker pull abozynski/bozynski_alina_portfolio
+```
+```
+docker run --name <desired_container_name> -it -p 5575:80 --rm abozynski/bozynski_alina_portfolio
+```
+Now open localhost:5575 in a browser!
 
 ## Available Scripts
 
