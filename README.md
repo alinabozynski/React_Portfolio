@@ -20,12 +20,9 @@ Git is susceptible to NTFS-related attacks when:
 
 Ensure all project dependencies are installed with `npm install`.\
 
+If you are running on Windows, go into the package.json script section and change the start script to `set PORT=5575 && craco start`.\
+
 Run the app on Localhost with: `npm run start`.\
-If you receive the error, 'Error: error:0308010C:digital envelope routines::unsupported' after the above command:
-* Unix: run `export NODE_OPTIONS=--openssl-legacy-provider`
-* Windows command prompt: `set NODE_OPTIONS=--openssl-legacy-provider`
-* Powershell: `$env:NODE_OPTIONS = "--openssl-legacy-provider"`
-If the above doesn't work, try to use the current LTS version from [Node.js](https://nodejs.org/en/download/releases).
 
 ### Run from Docker container 
 Clone repository with directions above and navigate to the root directory.\
@@ -51,7 +48,7 @@ In the project directory, you can run:
 ### `npm run start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5575](http://localhost:5575) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
