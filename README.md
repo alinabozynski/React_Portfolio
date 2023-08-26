@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Run with npm
 
 Clone this repository and change into it's root directory.\
-If not all files cloned, execute the following:
+If not all files cloned (caused by files containing the ':' character), execute the following:
 
 1. Set git flag with `git config core.protectNTFS false`.
    Git is susceptible to NTFS-related attacks when:
@@ -64,7 +64,7 @@ In the project directory, you can run:
 ### `npm run start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5575](http://localhost:5575) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
