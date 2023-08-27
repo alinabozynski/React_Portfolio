@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Run with npm
 
 Clone this repository and change into it's root directory.\
+If you are running this on Windows, there may be workarounds needed to clone (below), as this was made in WSL.\
 If not all files cloned (caused by files containing the ':' character), execute the following:
 
 1. Set git flag with `git config core.protectNTFS false`.
