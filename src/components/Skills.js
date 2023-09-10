@@ -1,5 +1,5 @@
 import { BadgeCheckIcon, ClipboardCheckIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useState } from "react";
 import { languages } from "../data";
 import { frontEnd } from "../data";
 import { backEnd } from "../data";
@@ -13,6 +13,20 @@ export default function Skills() {
     });
   };
 
+  const [class1, setClass1] = useState(false);
+  const [class2, setClass2] = useState(false);
+  const [class3, setClass3] = useState(false);
+  const [class4, setClass4] = useState(false);
+  const [class5, setClass5] = useState(false);
+  const [class6, setClass6] = useState(false);
+  const [class7, setClass7] = useState(false);
+  const [class8, setClass8] = useState(false);
+  const [class9, setClass9] = useState(false);
+  const [class10, setClass10] = useState(false);
+  const [class11, setClass11] = useState(false);
+  const [class12, setClass12] = useState(false);
+
+
   return (
     <section id="skills" className="pt-20">
       <div className="container px-5 py-10 mx-auto">
@@ -25,364 +39,415 @@ export default function Skills() {
           </div>
           <div>
             <p className="mx-auto mb-2 text-center">
-              Many skills (Front-End, Back-End, Frameworks/Tools, Languages)
+              Many skills &#40;Front-End, Back-End, Frameworks/Tools, Languages&#41;
               were acquired through the following courses within the Full Stack
               Program.
               <br className="mb-5" />
-              Hover over them to see what they were all about!
+              Click them to see what they were all about!
             </p>
-            <ul className="flex flex-wrap">
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+            <div className="flex flex-wrap justify-center">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass1(!class1)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Web Development 1, 2 &amp; 3
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Web Development 1, 2 &amp; 3
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>HTML5</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>CSS</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>JavaScript</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>JSON</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Cookies &amp; Sessions</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>PHP</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>MySQL</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>REST-based Python API Frameworks</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Cloud based infrastructure</li>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
-                  Programming
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">Programming</li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Java</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Developing, coding, testing, debugging</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>
-                        Data structures such as inheritance, encapsulation, and
-                        polymorphism
+                </button>
+                { class1 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 w-80">
+                      <li className="font-bold">
+                        Web Development 1, 2 &amp; 3
                       </li>
-                    </div>
-                  </ul>
-                </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>HTML5</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>CSS</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>JavaScript</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>JSON</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Cookies &amp; Sessions</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>PHP</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>MySQL</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>REST-based Python API Frameworks</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Cloud based infrastructure</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass2(!class2)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
+                  Programming
+                </button>
+                { class2 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">Programming</li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Java</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Developing, coding, testing, debugging</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>
+                          Data structures such as inheritance, encapsulation, and
+                          polymorphism
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
+              </div>
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass3(!class3)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Database Management Systems
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Database Management Systems
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>SQL</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>DDL</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>DML</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>ERDs</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Database Table Normalization</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class3 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Database Management Systems
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>SQL</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>DDL</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>DML</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>ERDs</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Database Table Normalization</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass4(!class4)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Information Systems
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Information Systems
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>OS interactions with device applications</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Computer hardware</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Computer networks</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class4 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Information Systems
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>OS interactions with device applications</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Computer hardware</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Computer networks</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass5(!class5)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Project Management Fundamentals and Agile Business Analysis
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Project Management Fundamentals and Agile Business
-                      Analysis
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Project Lifecycle</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Risk Management</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Cost Management</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Work Breakdown Structures</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Agile Methodologies &amp; Documentation</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class5 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Project Management Fundamentals and Agile Business
+                        Analysis
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Project Lifecycle</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Risk Management</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Cost Management</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Work Breakdown Structures</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Agile Methodologies &amp; Documentation</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass6(!class6)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   OO Systems Analysis & Design
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      OO Systems Analysis & Design
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Unified Modeling Language</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Object-Oriented Systems Analysis</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Use Cases</li>
-                      <li>Systems Development Life Cycle</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class6 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        OO Systems Analysis & Design
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Unified Modeling Language</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Object-Oriented Systems Analysis</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Use Cases</li>
+                        <li>Systems Development Life Cycle</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass7(!class7)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Business Requirements Gathering & Design
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Business Requirements Gathering & Design
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Document Development</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Design based on requirements</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Problem Solving</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Meetings</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class7 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Business Requirements Gathering & Design
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Document Development</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Design based on requirements</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Problem Solving</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Meetings</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass8(!class8)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Web Security
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">Web Security</li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Attacks (how and prevention)</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Cryptography</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Understanding exploits</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Ethical Hacking</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class8 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">Web Security</li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Attacks (how and prevention)</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Cryptography</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Understanding exploits</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Ethical Hacking</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass9(!class9)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Agile Full Stack Web Development
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Agile Full Stack Web Development
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Back End Examination</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>E-Commerce</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Source Control</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class9 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Agile Full Stack Web Development
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Back End Examination</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>E-Commerce</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Source Control</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass10(!class10)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Business Systems Build and Testing
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Business Systems Build and Testing
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Quality Assurance</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Application Deployment</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Testing against requirements</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>React JS</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Typescript</li>
-                    </div>
-                  </ul>
-                </div>
+                </button>
+                { class10 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Business Systems Build and Testing
+                      </li>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Quality Assurance</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Application Deployment</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Testing against requirements</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>React JS</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Typescript</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-              <div className="group flex relative">
-                <li className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white">
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass11(!class11)} className="p-3 lg:flex-none sm:flex-wrap mx-auto my-2 hover:text-white bg-white bg-opacity-5">
                   Communication Strategies (Basics, for Systems and Innovative
                   Thinking, &amp; for the Workplace)
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">
-                      Communication Strategies
-                    </li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Self-Awareness</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Interpersonal Skills</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Intercultural Competence</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Innovative Solutions</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>PACT - Purpose, Audience, Context, Tone</li>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-              <div className="group flex relative">
-                <li className="p-3 flex-none mx-auto my-2 hover:text-white">
-                  Industry Project
-                </li>
-                <div className="group-hover:opacity-100 bg-green-600 rounded px-1 text-base text-white absolute top-12 opacity-0">
-                  <ul className="p-5 lg:w-max sm:w-min">
-                    <li className="text-black font-bold">Industry Project</li>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>Real-world, on-the-job experience</li>
-                    </div>
-                    <div className="flex">
-                      <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
-                      <li>
-                        Joined a company Dev Team in the middle of a project
+                </button>
+                { class11 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">
+                        Communication Strategies
                       </li>
-                    </div>
-                  </ul>
-                </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Self-Awareness</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Interpersonal Skills</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Intercultural Competence</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Innovative Solutions</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>PACT - Purpose, Audience, Context, Tone</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
               </div>
-            </ul>
+              <div className="group flex relative mx-1.5">
+                <button type="button" onClick={() => setClass12(!class12)} className="p-3 flex-none mx-auto my-2 hover:text-white bg-white bg-opacity-5">
+                  Industry Project &#40;Co-Op&#41;
+                </button>
+                { class12 ?
+                  <div className="border-t border-r border-b my-1.5">
+                    <ul className="p-5 relative">
+                      <li className="font-bold">Industry Project</li>
+                      <div className="flex">
+                        Real-world, on-the-job experience as a web developer or 3Common Inc.,
+                        joining their development team in the middle of their app building process.
+                      </div>
+                      <div className="flex underline mb-1">
+                        <a href="https://app.3common.com" className="mr-5 hover:text-white">
+                          View the live site
+                        </a>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Vue.js</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Quasar</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>Netlify</li>
+                      </div>
+                      <div className="flex">
+                        <BadgeCheckIcon className="text-green-400 w-5 h-5 mr-1" />
+                        <li>MongoDB</li>
+                      </div>
+                    </ul>
+                  </div>
+                  : null
+                }
+              </div>
+            </div>
           </div>
         </div>
         <div className="pb-5">
