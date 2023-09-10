@@ -138,8 +138,8 @@ export const extensions = [
     link: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
   },
   {
-    name: "Print",
-    link: "https://marketplace.visualstudio.com/items?itemName=pdconsec.vscode-print",
+    name: "flippidippi theme",
+    link: "https://marketplace.visualstudio.com/items?itemName=flippidippi.flippidippi-theme",
   },
   {
     name: "REST Client",
@@ -150,7 +150,7 @@ export const extensions = [
     link: "https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby",
   },
   {
-    name: "Ruby Solargrap",
+    name: "Ruby Solargraph",
     link: "https://marketplace.visualstudio.com/items?itemName=castwide.solargraph",
   },
   {
@@ -165,9 +165,36 @@ export const extensions = [
     name: "vscode-gemfile",
     link: "https://marketplace.visualstudio.com/items?itemName=bung87.vscode-gemfile",
   },
+];
+
+export const WSLExtensions = [
   {
-    name: "Vue Language Features (Volar)",
-    link: "https://marketplace.visualstudio.com/items?itemName=Vue.volar",
+    name: "Composer",
+    link: "https://marketplace.visualstudio.com/items?itemName=DEVSENSE.composer-php-vscode",
+  },
+  {
+    name: "Docker",
+    link: "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker",
+  },
+  {
+    name: "ESLint",
+    link: "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
+  },
+  {
+    name: "PHP",
+    link: "https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode",
+  },
+  {
+    name: "PHP Profiler",
+    link: "https://marketplace.visualstudio.com/items?itemName=DEVSENSE.profiler-php-vscode",
+  },
+  {
+    name: "Prettier - Code formatter",
+    link: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+  },
+  {
+    name: "Print",
+    link: "https://marketplace.visualstudio.com/items?itemName=pdconsec.vscode-print",
   },
 ];
 
@@ -176,24 +203,34 @@ export const languages = [
   "Java",
   "JavaScript",
   "JSON",
+  "Python",
+  "Ruby",
   "HTML5",
   "CSS",
   "DML (Data Manipulation Language)",
   "DDL (Data Definition Language)",
   "SQL (Structured Query Language) / MySQL / MariaDB",
-  "Unified Modeling Language",
+  "UML (Unified Modeling Language)",
 ];
 
 export const frontEnd = [
   "React",
+  "Vue.js",
+  "Tailwind CSS",
   "Ensured pleasant end-user experience",
   "Fulfilled projects based on requirements ",
   "Built an e-commerce site with Ruby on Rails (Ubuntu)",
 ];
 
 export const backEnd = [
-  "Maintained databases",
-  "Object-Oriented Systems Analysis & Design (using UML)ct",
+  "Designed & Maintained databases",
+  "MongoDB",
+  "MySQL",
+  "MariaDB",
+  "PostgreSQL",
+  "Ruby on Rails",
+  "Docker",
+  "Object-Oriented Systems Analysis & Design (using UML)",
   "Python & REST (Representational State Transfer)-based Python APIs",
   "Ethical Hacking: SQL injections, Medusa, Hydra Brute Force Attacks, Samba",
   "ERDs (Entity Relationship Diagrams)",
@@ -204,13 +241,11 @@ export const tools = [
   "Git",
   "Github",
   "GitHub Actions / Workflows",
+  "Git pre-commit hooks: Husky, Jest",
+  "Code Linters (ESLint)",
   "VirtualBox",
   "Visual Studio Code",
   "Sublime Text",
   "TextPad",
-  "Docker",
-  "Husky",
-  "Jest",
-  "Code Linters (ESLint)",
-  "Project Management principles & fundamental aspects, including the Agile framework",
+  "Project Management principles & fundamental aspects, including the Agile framework and Behavior Driven Development",
 ];
