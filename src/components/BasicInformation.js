@@ -15,12 +15,25 @@ export default function BasicInformation() {
             </span>
           </h1>
           <p className="mb-8 leading-relaxed">
-            I am 19 years old and am currently achieving a diploma for Full
-            Stack Web Development at Red River College, which will be completed
-            in August 2023.
-            <br className="mb-5" />I fell in love with programming when it was
-            first introduced to me. I loved seeing how changing certain
-            properties or expressions changed the outcome!
+            I have recently achieved a diploma for Full Stack Web Development at
+            Red River College &#40;August 2023&#41;. I fell in love with
+            programming when it was first introduced to me. I loved the idea of
+            being presented with a task and having to problem solve to figure
+            out how to produce what was desired! I am excited to continue
+            learning about the vast field of programming.
+            <br className="mb-5" />
+            Collaborating with a development team during my co-op, I have had
+            real experience adding features to and fixing bugs for a live
+            application. Gaining language diversity, I have developed both
+            functionality and style using PHP, Python, Ruby, JavaScript, React,
+            Java, CSS, HTML5, and SQL to create various responsive web
+            applications that include secure database and logins with hashing
+            and salting of account passwords and verification of routing access.
+            <br className="mb-5" />I am accustomed to a busy schedule, so time
+            management is one of my strong suits and I would love to work in a
+            fast-paced environment. I am a self-motivated individual, always
+            aiming for success, but I am not afraid to fail, learn, and try
+            again, as mistakes are a great way to learn!
           </p>
           <div className="flex justify-center ml-0 pl-0">
             <Button
