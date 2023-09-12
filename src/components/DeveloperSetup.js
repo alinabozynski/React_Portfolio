@@ -5,7 +5,7 @@ import ps from "../assets/images/ps.png";
 import cmd from "../assets/images/cmd.png";
 import ubuntu from "../assets/images/ubuntu.png";
 import product_icons from "../assets/images/product_icon_theme.png";
-import { extensions } from "../data";
+import { extensions, WSLExtensions } from "../data";
 
 export default function DeveloperSetup() {
   const scrollToTop = () => {
@@ -34,7 +34,7 @@ export default function DeveloperSetup() {
             <h1 className="title-font text-4xl mb-4 font-medium text-white">
               VS Code Setup
             </h1>
-            <p className="mb-3">Setting Preferences:</p>
+            <p className="mb-3">Fun Details:</p>
             <ul className="mx-5">
               <li>
                 <strong>Color Theme:</strong> &quot;Dark+ (default dark)&quot;
@@ -43,9 +43,16 @@ export default function DeveloperSetup() {
                 <strong>File Icon Theme:</strong> &quot;Seti (Visual Studio
                 Code)&quot;
               </li>
-              <li className="mb-3">
+              <li>
                 <strong>Product Icon Theme:</strong> &quot;flippidippi product
                 icons&quot;
+              </li>
+              <li className="mb-3">
+                <strong>Preferred Editor Font:</strong> &quot;
+                <span className="tracking-widest font-display">
+                  Unbounded, monospace
+                </span>
+                &quot;
               </li>
             </ul>
             <img
@@ -54,9 +61,24 @@ export default function DeveloperSetup() {
               src={vscode}
             />
           </div>
-          <p>I have the following Extensions installed:</p>
+          <p>Locally Installed Extensions:</p>
           <ul className="mb-8 sm:block lg:flex lg:flex-wrap justify-center">
             {extensions.map((extension) => (
+              <span key={extension.name}>
+                <li className="p-3 flex-none">
+                  <a
+                    className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
+                    href={extension.link}
+                  >
+                    {extension.name}
+                  </a>
+                </li>
+              </span>
+            ))}
+          </ul>
+          <p>Installed Extensions for WSL: Ubuntu</p>
+          <ul className="mb-8 sm:block lg:flex lg:flex-wrap justify-center">
+            {WSLExtensions.map((extension) => (
               <span key={extension.name}>
                 <li className="p-3 flex-none">
                   <a
@@ -104,68 +126,8 @@ export default function DeveloperSetup() {
               </p>
             </div>
           </div>
-          <p>
-            Folders for every class, with separate folders for all projects.
-            <br className="mb-8" />
-            Frequently used installs:
-          </p>
-          <div className="items-center text-center mb-8">
-            <ul className="mb-8 leading-relaxed flex flex-wrap">
-              <li className="p-3 flex-none mx-auto">
-                <a
-                  className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
-                  href="https://www.npmjs.com/"
-                >
-                  NPM
-                </a>
-              </li>
-              <li className="p-3 flex-none mx-auto">
-                <a
-                  className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
-                  href="https://nodejs.org/en/about/"
-                >
-                  Node.js
-                </a>
-              </li>
-              <li className="p-3 flex-none mx-auto">
-                <a
-                  className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
-                  href="https://www.npmjs.com/package/eslint"
-                >
-                  ESLint
-                </a>
-              </li>
-              <li className="p-3 flex-none mx-auto">
-                <a
-                  className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
-                  href="https://typicode.github.io/husky/#/"
-                >
-                  Husky
-                </a>
-              </li>
-              <li className="p-3 flex-none mx-auto">
-                <a
-                  className="inline-flex text-white py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
-                  href="https://jestjs.io/"
-                >
-                  Jest
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-        <div className="items-center text-center">
-          <h1 className="title-font text-4xl mb-4 font-medium text-white">
-            Preferred Editor Font
-          </h1>
-          <p>
-            My VS Code font is currently:{" "}
-            <span className="tracking-widest font-display">
-              &quot;Unbounded, monospace&quot;
-            </span>
-          </p>
-        </div>
-        <div className="text-center mt-20 text-white">
+        <div className="text-center mt-15 text-white">
           <p className="tracking-widest font-display p-2">
             <button
               onClick={scrollToTop}
